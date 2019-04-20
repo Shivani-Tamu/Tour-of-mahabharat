@@ -12,7 +12,7 @@ body , html {
 
 /*************** navigation style ***********************/
 .nav-link {
-  font-size: 1.4em;
+  font-size: 2em;
   font-family: 'Lato', 'sans-serif';
   cursor: pointer;
   margin-left: 25px;
@@ -30,7 +30,7 @@ color: #fff !important;
 .navbar .navbar-text {
   color: white!important;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 2.4em;
 }
 
 .sheero { 
@@ -133,10 +133,12 @@ color: #fff !important;
 	padding: 20px;
 }
 
+/*
 .ptext .border.trans{
 	background-color: transparent;
 
-}
+}*/
+
 .fa {
   padding: 40px;
   font-size: 15px;
