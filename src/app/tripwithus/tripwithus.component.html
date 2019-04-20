@@ -4,20 +4,53 @@
   <title>TripWithUs!</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+ 
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand"><img src="/assets/images/sheero.png" alt="sheero_logo" class="sheero"></a>
+        <span class="navbar-text mx-auto">TripWithUs!</span>
+        
+        <button class="navbar-toggler ml-auto navbar-light bg-light" data-toggle="collapse" data-target="#collapse_target">
+        
+            <span class="navbar-toggler-icon"></span>
+            
+        </button>
+        
+        <div class="collapse navbar-collapse" id="collapse_target">
+        <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+                <a class="nav-link" routerLink="">Home</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link" routerLink="aboutus">About Us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="signup">Sign Up</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="login">Login</a>
+            </li>
+
+        </ul>
+        </div>
+    </nav>
     <!-- Navigation -->
+    <!--
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
+           
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -26,30 +59,18 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <!-- <img src="/assets/images/shee.png" alt=""> -->
+                    
                     <p><img src="/assets/images/shee.png" alt="Smiley face" > TripWithUs!</p>
                 </a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
+           
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                    <!-- <a class="navbar-brand" href="#">
-                        <img src="http://placehold.it/150x50&amp;text=Logo" alt="">
-                    </a> -->
-                    <ul>
-                    <!-- <input type="button" class = "btn" >< &nbsp; -->
+                    
 
-                    <!-- <li><input type="button" value = "TripWithUs!" class = "title" style="color:maroon;" ></li> &nbsp; -->
-                    <!-- <li class="nav-link" >TripWithUs!</li> -->
-                  </ul>
-
-                <!-- <a  href="#">
-                    <img src="http://placehold.it/150x50&amp;text=Logo" alt="">
-                </a> -->
+                
                 <ul class="nav navbar-nav navbar-right main-navigation mobile-navigation">
-                    <!-- <li>
-                        <a class="nav-link" routerLink="our-story">About Us</a>
-                    </li> -->
+                    
 
                     <li>
                         <a class="nav-link" routerLink="">Home</a>
@@ -66,10 +87,10 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
+            
         </div>
-        <!-- /.container -->
-    </nav>
+        
+    </nav> -->
 
 <div class="pimg1">
 	<div class="ptext">
@@ -348,6 +369,10 @@
 
 </section>
 
+<!--Bootstrap4 JS files -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
 

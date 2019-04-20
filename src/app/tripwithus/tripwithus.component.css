@@ -9,9 +9,35 @@ body , html {
 	color: #666;
 
 }
-.navbar-fixed-top .nav {
-  padding: 23px 0;
+
+/*************** navigation style ***********************/
+.nav-link {
+  font-size: 1.1em;
+  font-family: 'Lato', 'sans-serif';
+  cursor: pointer;
+  margin-left: 25px;
+  color: #fff;
 }
+
+nav .navbar-nav li {
+  margin-left: 25px;
+  }
+
+nav .navbar-nav li a{
+color: #fff !important;
+}
+
+.navbar .navbar-text {
+  color: white!important;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.sheero { 
+  height: 60px;
+  width: auto;
+}
+
 
 
 .title{
@@ -56,10 +82,7 @@ body , html {
       padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
   }
 
-  /* .navbar-fixed-top .navbar-brand {
-    background-color:  	#708090;
-      padding: 15px 0;
-  } */
+ 
 }
 
 .pimg1,.pimg2,.pimg3{
@@ -75,9 +98,7 @@ body , html {
 	background-image: url('newyork.jpg');
 	min-height: 600px;
 }
-/* .nav-nav navbar-nav{
-color: red;
-} */
+
 .pimg2{
 	background-image: url('niagara.jpg');
 	min-height: 400px;
@@ -88,10 +109,7 @@ color: red;
 	min-height: 400px;
 }
 
-.nav-link li a{
-    font-size: 160%;
 
-}
 .section{
 	text-align: center;
 	padding: 50px 80px;
@@ -113,12 +131,6 @@ color: red;
     padding: 10px;
 }
 
-.main-navigation li {
-    font-size: 1.4em;
-    font-family: 'Lato', 'sans-serif';
-    cursor: pointer;
-    margin-left: 20px;
-}
 
 .ptext{
 	position: absolute;
@@ -608,7 +620,7 @@ padding: 40px;
 
 /***************************** Media Queries ***********************************************/
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
 
 
@@ -619,9 +631,6 @@ padding: 40px;
     word-spacing: 2px;
     vertical-align: middle;
 }
-
-
-
 
 .pimg3 .ptext .border {
     display: block;
@@ -663,12 +672,8 @@ padding: 40px;
 
 #portfolio {
         padding: 10px 10px;
-
-
     }
-    .navbar-fixed-top .navbar-brand {
-      padding: 0 15px;
-  }
+   
     .content-para {
         font-size: 1.5em;
         word-spacing: 3px;
@@ -690,25 +695,8 @@ padding: 40px;
         display: none;
     }
 
-    .mobile-navigation {
-        margin-top: -10px;
-    }
-
-    .mobile-navigation li {
-        padding-bottom: 3%;
-        font-size: 1.3em;
-        font-family: 'Lato', 'sans-serif';
-
-}
-.navbar-fixed-top .navbar-brand {
-  padding: 2px 0;
-}
-
-    /* .navbar-toggle {
-    margin-right: 35px;
-} */
-
-
-
+		nav .navbar-nav li {
+			padding-top: 2%;
+			}  
 
 }
