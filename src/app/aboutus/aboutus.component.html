@@ -1,104 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+  <title>TripWithUs- Destinations!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+</head>
+<body>
+  <!-- Navigation -->
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand"><img src="/assets/images/sheero.png" alt="sheero_logo" class="sheero"/></a>
+        <span class="navbar-text mx-auto">TripWithUs!</span>
+        
+        <button class="navbar-toggler ml-auto navbar-light bg-light" data-toggle="collapse" data-target="#collapse_target">
+        
+            <span class="navbar-toggler-icon"></span>
+            
+        </button>
+        
+        <div class="collapse navbar-collapse" id="collapse_target">
+        <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+                <a class="nav-link" routerLink="">Home</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link" routerLink="aboutus">About Us</a>
+            </li>
 
+            <li class="nav-item">
+                <a class="nav-link" routerLink="signup">Sign Up</a>
+            </li>
 
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="login">Login</a>
+            </li>
 
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-	<!-- Bootstrap 4 CDN -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-  </head>
-
-  <body>
-
-
-
- <div class="container">
-     <h1 class="header1">About Us!
-    <span style="float:right;"><button class="btn btn-success" (click)="logout()">Home</button></span></h1>
-
-     <p class="aboutus-para">
-
-                            Nurtured from the seed of a single great idea - to empower the traveller - TripWithUs! is a pioneer in the US online travel industry. Founded in the year 2010 by Sudeepta Das, TripWithUs! came to life to empower the millenial traveller with instant bookings and comprehensive choices. The company initiated its journey serving the Austin market, offering a range of best-value products and services powered by technology and round-the-clock customer support.<br><br>
-
-                            After emboldening its position in the market as a brand recognised for its reliability and transparency, TripWithUs! launched its pan US operations in 2015. With more and more Americans initiating to transact online and new opportunities with the advent of low cost carriers, TripWithUs! offered travellers the convenience of booking travel online with a few clicks.<br><br>
-
-                            TripWithUs's rise has been led by the vision of its executive leadership team and the spirit of each one of its  employees, for whom no idea is too big and no problem too difficult. With untiring determination, TripWithUs! has proactively diversified its product offerings, adding a variety of online and offline services. TripWithUs! has stayed ahead of the curve by continually evolving its technology to meet the ever-changing demands of the rapidly developing global travel market, steadily establishing itself as the United States' leading online travel company.
-
-
-     </p>
-
-</div>
-
-<!-- Page Content -->
-<div class="container">
-
-  <div class="row">
-    <!-- Team Member 1 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-
-        <img src="/assets/images/sudeepta.jpg" class="card-img-top sudeepta-img" alt="...">
-
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Sudeepta Das</h5>
-          <div class="card-text text-black-50">Chief Executive Officer</div>
+        </ul>
         </div>
-      </div>
-    </div>
-    <!-- Team Member 2 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="/assets/images/biswajeet.jpg" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Biswajeet Mohapatra</h5>
-          <div class="card-text text-black-50">Chief Operating Officer</div>
+    </nav> 
+    
+    <div class="search-part">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search...">
+            <div class="input-group-append">
+                <button class="btn btn-secondary" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
         </div>
-      </div>
     </div>
-    <!-- Team Member 3 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="/assets/images/shivani.jpg" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Shivani Sharma</h5>
-          <div class="card-text text-black-50">Chief Information Officer</div>
+    
+    <div class="container mb-5">
+        <div class="card-deck">
+        <div class="card" style="color: #555;">
+            <div class="card-body">
+            <img src="/assets/images/Dest_goldengate.png" alt="golden gate picture" class="img-fluid"/>
+            <h3 class="card-title mt-2">San francisco</h3>
+            <h5 class="card-subtitle">California</h5>
+            <p class="card-text mt-3">Experience the diverse culture and social movements in SFO's lifestyle. From the Castro to the Mission,
+                appreciate each enclave's beauty.</p>
+            <a href="#" class="btn btn-primary">See more..</a>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- Team Member 4 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="/assets/images/aditya.jpg" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Aditya Wagholikar</h5>
-          <div class="card-text text-black-50">Chief Financial Officer</div>
+        <div class="card" style="color: #555;">
+            <div class="card-body">
+            <img src="/assets/images/dest_washington_dc.png" alt="Washington DC picture" class="img-fluid"/>
+            <h3 class="card-title mt-2">Washington, D.C.</h3>
+            <h5 class="card-subtitle">District of Columbia</h5>
+            <p class="card-text mt-3">The nation's capital offers a lot to you. Apart from historic landmarks, prepare yourself for its vivacous restaurants and bar scenes.</p>
+            <a href="#" class="btn btn-primary">See more..</a>
+            </div>
         </div>
-      </div>
+        <div class="card" style="color: #555;">
+            <div class="card-body">
+            <img src="/assets/images/dest_Boston.png" alt="Boston public garden picture" class="img-fluid"/>
+            <h3 class="card-title mt-2">Boston</h3>
+            <h5 class="card-subtitle">Massachusetts</h5>
+            <p class="card-text mt-3">If you want to have a glimpse at the U.S. history, prestigious universities, Freedom Trail, and baseball - Boston is for you. Pack yourself a picnic at Boston Public Garden or enjoy its scenic trails.</p>
+            <a href="#" class="btn btn-primary">See more..</a>
+            </div>
+        </div>
+            </div>
+        
+         <div class="card-deck mt-5">
+        <div class="card" style="color: #555;">
+            <div class="card-body">
+            <img src="/assets/images/dest_chicago.png" alt="Chicago Bean picture" class="img-fluid"/>
+            <h3 class="card-title mt-2">Chicago</h3>
+            <h5 class="card-subtitle">Illinois</h5>
+            <p class="card-text mt-3">Get yourself moving in the windy city of deep dish pizzas and get some quirky snaps at Millennium Park's legendary "Bean". Cuisines, musueums, and architecture will always leave you amazed.</p>
+            <a href="#" class="btn btn-primary">See more..</a>
+            </div>
+        </div>
+        <div class="card" style="color: #555;">
+            <div class="card-body">
+            <img src="/assets/images/dest_neworleans.png" alt="New Orleans picture" class="img-fluid"/>
+            <h3 class="card-title mt-2">New Orleans</h3>
+            <h5 class="card-subtitle">Louisiana</h5>
+            <p class="card-text mt-3">New Orleans offers you a rich blend of Europian, Caribbean, and local cultures. The city welcomes its visitors with all kinds of live jazz, gumbo, and partying that it can present.</p>
+            <a href="#" class="btn btn-primary">See more..</a>
+            </div>
+        </div>
+        <div class="card" style="color: #555;">
+            <div class="card-body">
+            <img src="/assets/images/dest_miami.png" alt="Miami beach picture" class="img-fluid"/>
+            <h3 class="card-title mt-2">Miami</h3>
+            <h5 class="card-subtitle">Florida</h5>
+            <p class="card-text mt-3">Experience the melting pot of cultures by travelling to this South Florida city. The city has amazing museums that showcase history, unique art, and culture.</p>
+            <a href="#" class="btn btn-primary">See more..</a>
+            </div>
+        </div>
+            </div>     
     </div>
-  </div>
+<!--Bootstrap4 JS files -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    
+</body>
+    
 
-</div>
-
-
-
-
-
-
-  </body>
 </html>
-
-
