@@ -76,6 +76,7 @@ color: #fff !important;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	max-width: 100%;
 }
 
 .pimg1{
@@ -670,16 +671,21 @@ padding: 40px;
 
 #portfolio {
 				padding: 10px 10px;
-				max-width: 100%;
     }
-   
+ /*  
     .content-para {
         font-size: 1.5em;
         word-spacing: 3px;
         padding: 10px 0px 0px;
         text-align: left;
-    }
-
+		}*/
+		.content-para{
+		font-size: 2em;
+    line-height: 1.4em;
+    word-spacing: 3px;
+    padding: 10px 0px 0px;
+    text-align: left;
+	}
 .hover-bg .hover-text {
     display: none;
 }
@@ -700,6 +706,13 @@ padding: 40px;
 				height: 45px;
 				width: auto;
 			}
+
+
+/************ adjusting the light grey portfolio container inside dark grey section **********/
+.section{
+	text-align: center;
+	padding: 50px 5px;
+}
 /************* Carousel destinations ***********/
 .carousel-inner img {
   max-width: 100%;
