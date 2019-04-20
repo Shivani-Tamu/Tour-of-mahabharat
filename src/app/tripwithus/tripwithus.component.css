@@ -665,6 +665,10 @@ padding: 40px;
 
 }
 
+.container {
+	max-width: 100%;
+}
+
 #portfolio {
         padding: 10px 10px;
     }
