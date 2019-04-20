@@ -115,6 +115,11 @@ color: #fff !important;
     padding: 10px;
 }
 
+.footer-part {
+	text-align: center;
+	font-size: 1.4em;
+}
+
 
 .ptext{
 	position: absolute;
