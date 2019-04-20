@@ -195,7 +195,7 @@ textarea {
   word-spacing: 2%;
   padding-bottom: 5%;
   /*margin-left: 19.99999%;*/
-  margin-left: 19.89999%;
+  width: auto;
   padding-top: 2%;
   letter-spacing: 1%;
   }
