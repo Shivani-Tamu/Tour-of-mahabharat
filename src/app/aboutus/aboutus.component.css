@@ -21,9 +21,6 @@ html, body {
 
 /************* navigation ********************/
 
-#document {
-    display: none;
-}
 
 .nav-link {
     font-size: 2em;
