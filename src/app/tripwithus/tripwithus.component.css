@@ -141,11 +141,6 @@ color: #fff !important;
 	padding: 20px;
 }
 
-/*
-.ptext .border.trans{
-	background-color: transparent;
-
-}*/
 
 .fa {
   padding: 40px;
@@ -161,7 +156,12 @@ color: #fff !important;
     opacity: 0.7;
 }
 
-
+.explore-para{
+	text-align: center; 
+	padding-top: 5%; 
+	font-size: 1.5em; 
+	font-weight: bold;
+}
 
 
 
@@ -625,6 +625,13 @@ padding: 40px;
 	.section{
 		text-align: center;
 		padding: 50px 5px;
+	}
+
+	.explore-para{
+		text-align: center; 
+		padding-top: 10%; 
+		font-size: 1.5em; 
+		font-weight: bold;
 	}
 
 .pimg1 .ptext .border {
