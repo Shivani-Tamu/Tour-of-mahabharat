@@ -608,7 +608,10 @@ padding: 40px;
 	    -ms-transform: translateZ(0);
 	        transform: translateZ(0);
 }
-
+/************* Carousel destinations ***********/
+.carousel-inner img {
+  margin: auto;
+}
 
 /***************************** Media Queries ***********************************************/
 
@@ -695,5 +698,9 @@ padding: 40px;
 				height: 45px;
 				width: auto;
 			}
+/************* Carousel destinations ***********/
+.carousel-inner img {
+  max-width: 100%;
+}
 
 }
