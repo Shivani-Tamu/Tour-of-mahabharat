@@ -21,7 +21,7 @@ color: #fff !important;
 }
 
 .sheero { 
-  height: 30px;
+  height: 60px;
   width: auto;
 }
 
@@ -194,7 +194,8 @@ textarea {
   font-size: 180%;
   word-spacing: 2%;
   padding-bottom: 5%;
-  margin-left: 19.99999%;
+  /*margin-left: 19.99999%;*/
+  margin-left: 19.89999%;
   padding-top: 2%;
   letter-spacing: 1%;
   }
