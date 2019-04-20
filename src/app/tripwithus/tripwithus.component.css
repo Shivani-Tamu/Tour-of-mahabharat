@@ -68,14 +68,13 @@ color: #fff !important;
 }
 
 
-
+/*
 @media(min-width:768px) {
   body {
       padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
-  }
-
+/*  }
  
-}
+}*/
 
 .pimg1,.pimg2,.pimg3{
 	position: relative;
@@ -88,8 +87,7 @@ color: #fff !important;
 
 .pimg1{
 	background-image: url('newyork.jpg');
-	background-size: cover;
-	min-height: 600px;
+	min-height: 1000px;
 }
 
 .pimg2{
