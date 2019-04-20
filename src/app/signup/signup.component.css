@@ -70,10 +70,10 @@ section {
 /********** Heading ***********/
 
 h2 {
-  font-weight: 300;
+  font-weight: bold;
   font-size: 180%;            /* expressed in %age of body font size: target/context = 36px/20px = 180% */
   word-spacing: 2%;
-  margin-bottom: 15%;
+  margin-bottom: 8%;
   margin-left: 19.8958333333%;     /* 960px is row width (context) ,so Target/Context = 191px/960px = 19.8958333333% */
   padding-top: 2%;
   text-align: center;
@@ -191,7 +191,8 @@ textarea {
   font-size: 180%;
   word-spacing: 2%;
   /*padding-bottom: 12%;*/
-  margin-left: 19.99999%;
+  /*margin-left: 19.99999%;*/
+  text-align: center;
   padding-top: 2%;
   letter-spacing: 1%;
   }
