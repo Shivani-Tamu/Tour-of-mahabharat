@@ -88,6 +88,7 @@ color: #fff !important;
 
 .pimg1{
 	background-image: url('newyork.jpg');
+	background-size: cover;
 	min-height: 600px;
 }
 
