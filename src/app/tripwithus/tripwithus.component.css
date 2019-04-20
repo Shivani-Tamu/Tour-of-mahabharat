@@ -683,6 +683,11 @@ padding: 40px;
 
 		nav .navbar-nav li {
 			padding-top: 2%;
-			}  
+			}
+			
+		.sheero { 
+				height: 45px;
+				width: auto;
+			}
 
 }
