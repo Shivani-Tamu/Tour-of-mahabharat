@@ -1,10 +1,22 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 html, body {
     background-image: url('http://getwallpapers.com/wallpaper/full/3/7/e/1449721-windows-81-lock-screen-wallpaper-1920x1200-4k.jpg');
     font-family: "Lato", sans-serif;
     background-size: cover;
-}
+        height: 100vh;
+        font-style: 16px;
+        font-family: 'Lato', 'sans-serif';
+        font-weight: 400;
+        line-height: 1.8em;
+        color: #666;
+    
+    }
+
 /************* navigation ********************/
 
 
