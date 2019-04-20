@@ -707,4 +707,8 @@ padding: 40px;
   max-width: 100%;
 }
 
+.carousel-inner {
+	padding-top: 2%;
+}
+
 }
