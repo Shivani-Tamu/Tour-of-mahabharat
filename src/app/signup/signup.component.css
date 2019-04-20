@@ -76,7 +76,6 @@ h2 {
   margin-bottom: 8%;
   margin-left: 19.8958333333%;     /* 960px is row width (context) ,so Target/Context = 191px/960px = 19.8958333333% */
   padding-top: 2%;
-  text-align: center;
   letter-spacing: 1%;
 }
 
@@ -190,9 +189,8 @@ textarea {
   font-weight: 300;
   font-size: 180%;
   word-spacing: 2%;
-  /*padding-bottom: 12%;*/
-  /*margin-left: 19.99999%;*/
-  text-align: center;
+  padding-bottom: 5%;
+  margin-left: 19.99999%;
   padding-top: 2%;
   letter-spacing: 1%;
   }
