@@ -6,6 +6,10 @@
   color: #fff;
 }
 
+nav .navbar-nav li {
+  margin-left: 25px;
+  }
+
 nav .navbar-nav li a{
 color: #fff !important;
 }
