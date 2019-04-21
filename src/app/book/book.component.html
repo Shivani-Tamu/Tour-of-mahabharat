@@ -88,8 +88,18 @@
         
           
           <div class="card"  style="color: #555;" *ngFor="let book of books">
-              <img bind-src="book.publisher" alt="picture of added location" class="card-img-top img-fluid"/>
+              
               <div class="card-body"> 
+                  <img bind-src="book.publisher" alt="picture of added location" class="img-fluid"/>
+                  <h3 class="card-title mt-2">{{ book.isbn }}</h3>
+                  <h5 class="card-subtitle mt-2">{{ book.author }}</h5>
+                  <h5 class="card-subtitle mt-2">{{ book.title }}</h5> 
+          </div>
+          </div>
+          <div class="card"  style="color: #555;" *ngFor="let book of books">
+              
+              <div class="card-body"> 
+                  <img bind-src="book.publisher" alt="picture of added location" class="img-fluid"/>
                   <h3 class="card-title mt-2">{{ book.isbn }}</h3>
                   <h5 class="card-subtitle mt-2">{{ book.author }}</h5>
                   <h5 class="card-subtitle mt-2">{{ book.title }}</h5> 
