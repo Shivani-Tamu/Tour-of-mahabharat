@@ -39,6 +39,23 @@ color: #000 !important;
   
 }
 
+.table-bordered {
+  border: 1px solid #dee2e6;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  font-size: 1.5em;
+  background-color: transparent;
+}
+
+h1 {
+margin-bottom: 1.5em;
+}
+
 
 
 
