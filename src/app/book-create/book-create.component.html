@@ -1,4 +1,4 @@
-<div class="container">
+<!--<div class="container">
     <h1>Add New Book</h1>
     <div class="row">
       <div class="col-md-6">
@@ -16,10 +16,7 @@
             <input type="text" class="form-control" [(ngModel)]="book.author" name="author" required>
           </div>
 
-          <!-- <div class="form-group">
-            <label for="name"> Destination Best Times To Visit</label>
-            <input type="text" class="form-control" [(ngModel)]="book.published_year" name="published_year" required>
-          </div> -->
+         
           <div class="form-group">
             <label for="name">Destination Image</label>
             <input type="text" class="form-control" [(ngModel)]="book.publisher" name="publisher" required>
@@ -30,4 +27,180 @@
         </form>
       </div>
     </div>
-  </div>
+  </div>-->
+
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"> <!--including Google fonts Lato for our website-->
+  
+  <!-- Bootstrap Files for Header section alone -->
+   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+      
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand"><img src="/assets/images/sheero.png" alt="sheero_logo" class="sheero"></a>
+        <span class="navbar-text mx-auto">TripWithUs!</span>
+        
+        <button class="navbar-toggler ml-auto navbar-light bg-light" data-toggle="collapse" data-target="#collapse_target">
+        
+            <span class="navbar-toggler-icon"></span>
+            
+        </button>
+        
+        <div class="collapse navbar-collapse" id="collapse_target">
+        <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+                <a class="nav-link" routerLink="">Home</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link" routerLink="aboutus">About Us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="signup">Sign Up</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="login">Login</a>
+            </li>
+
+        </ul>
+        </div>
+    </nav> 
+    
+      
+      
+    <section class="add-events">
+                <div class="add-form-container">
+                <div class="row">
+                    <h2 style="color:#555454;">Add Events</h2>
+                </div>
+                
+                
+                    <form (ngSubmit)="saveBook()" #bookForm="ngForm" class="add-form">
+                        <!---- Destination city row ----------->
+                        
+                            
+                                <label for="city-name">Destination City</label>
+                            
+                            
+                                <input type="text" name="city-name" id="city-name" [(ngModel)]="book.isbn" placeholder="enter city" required>
+                                
+                                
+                        <!------- Destination Activity row --------->
+                       
+                        
+                        <label for="city-activity">Destination Activity</label>
+                        
+                        <input type="text" name="city-activity" id="city-activity" [(ngModel)]="book.title" placeholder="enter what you want to do, e.g. Hiking, Kayaking etc." minlength="3" maxlength="20" required data-errormessage-value-missing="Uh oh, somethings wrong!" data-errormessage-type-mismatch="Uh oh, somethings wrong! enter activity 3-20 characters long">
+                        
+                       
+                       
+                        <!------- Destination Budget row --------->
+                       
+                        
+                        <label for="budget">Destination Budget</label>
+                        
+                        
+                      <input type="text" name="budget" id="budget" [(ngModel)]="book.author" placeholder="enter dollar amount e.g. $500" pattern="[\$0-9]" required data-errormessage-value-missing="Uh oh, somethings wrong!" data-errormessage-type-mismatch="Uh oh, somethings wrong! Add dollar sign before number">
+                  
+                        
+                        <!------- Destination Image --------->
+                       
+                        
+                        <label for="image">Destination Image</label>
+                        
+                        
+                        <input type="text" name="image" id="image" [(ngModel)]="book.publisher" placeholder="copy image address of city and paste here" required>
+                        
+                          
+                        <!----------- Save button row ------------->
+                       
+                                <label>&nbsp;</label>
+                           
+                                
+                                <div class="submit-button">
+                                    <input type="submit" value="Save" [disabled]="!bookForm.form.valid">
+                                </div>
+                                
+                    </form>
+                
+                
+                    </div>
+        
+        
+        <!----------------------------------  Mobile Form ------------------------------------------- -->
+            <div class="add-form-container-mobile">
+                <div class="row">
+                    <h2 style="color:#fff;">Add Events</h2>
+                </div>
+                <!------- Customer name row --------->
+                <div class="row">
+                    
+                        <form (ngSubmit)="saveBook()" #bookForm="ngForm" class="add-form-mobile">
+       
+                                <!---- Destination city row ----------->
+                        
+                            
+                                <label for="city-name">Destination City</label>
+                            
+                            
+                                <input type="text" name="city-name" id="city-name" [(ngModel)]="book.isbn" placeholder="enter city" required>
+                        
+<!------- Destination Activity row --------->
+                       
+                        
+<label for="city-activity">Destination Activity</label>
+                        
+<input type="text" name="city-activity" id="city-activity" [(ngModel)]="book.title" placeholder="enter what you want to do, e.g. Hiking, Kayaking etc." minlength="3" maxlength="20" required data-errormessage-value-missing="Uh oh, somethings wrong!" data-errormessage-type-mismatch="Uh oh, somethings wrong! enter activity 3-20 characters long">
+
+                      
+<!------- Destination Budget row --------->
+                       
+                        
+<label for="budget">Destination Budget</label>
+                        
+                        
+<input type="text" name="budget" id="budget" [(ngModel)]="book.author" placeholder="enter dollar amount e.g. $500" pattern="[\$0-9]" required data-errormessage-value-missing="Uh oh, somethings wrong!" data-errormessage-type-mismatch="Uh oh, somethings wrong! Add dollar sign before number">
+                      
+
+<!------- Destination Image --------->
+                       
+                        
+<label for="image">Destination Image</label>
+                        
+                        
+<input type="text" name="image" id="image" [(ngModel)]="book.publisher" placeholder="copy image address of city and paste here" required>
+                       
+                          
+                        <!----------- Save button row ------------->
+                        
+                                
+                                    <label>&nbsp;</label>
+                                
+                                    <div class="submit-button">
+                                        <input type="submit" value="Save" [disabled]="!bookForm.form.valid">
+                                    </div>
+                    </form>
+                
+                </div> 
+                    </div>
+    
+            </section>
+      
+      <!------------------------------------------------------------------------------------------------------------------------->
+      <!--Bootstrap4 JS files -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            
+  </body>
+</html>
