@@ -20,7 +20,6 @@ export class BookCreateComponent implements OnInit {
   saveBook() {
     this.http.post('/book', this.book)
       .subscribe(res => {
-        alert('hello');
           let id = res['_id'];
           this.router.navigate(['/book-details', id]);
         }, (err) => {
