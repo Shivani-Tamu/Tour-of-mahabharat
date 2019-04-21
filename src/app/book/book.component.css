@@ -25,16 +25,16 @@ color: #000 !important;
   width: auto;
 }
 
-.portfolio-items {
-  padding: 40px 30px;
+.dest-format {
+ /* padding: 40px 30px;*/
   background-color: #888;
   margin: 10px;
   display: block;
   box-sizing: border-box;
   height: 600px;
-  width: 390px;
+  width: 400px;
 }
 
-.portfolio-items img {
+.card-body {
   border: 1px solid #0000ff
 }
