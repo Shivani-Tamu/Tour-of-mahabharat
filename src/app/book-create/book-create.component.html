@@ -16,6 +16,7 @@
             <input type="text" class="form-control" [(ngModel)]="book.author" name="author" required>
           </div>
 
+           minlength="3" maxlength="20" required data-errormessage-value-missing="Uh oh, somethings wrong!" data-errormessage-type-mismatch="Uh oh, somethings wrong! enter activity 3-20 characters long"
          
           <div class="form-group">
             <label for="name">Destination Image</label>
@@ -100,7 +101,7 @@
                         
                         <label for="city-activity">Destination Activity</label>
                         
-                        <input type="text" name="city-activity" id="city-activity" [(ngModel)]="book.title" placeholder="enter what you want to do, e.g. Hiking etc." minlength="3" maxlength="20" required data-errormessage-value-missing="Uh oh, somethings wrong!" data-errormessage-type-mismatch="Uh oh, somethings wrong! enter activity 3-20 characters long">
+                        <input type="text" name="city-activity" id="city-activity" [(ngModel)]="book.title" placeholder="enter what you want to do, e.g. Hiking etc.">
                         
                        
                        
@@ -110,7 +111,7 @@
                         <label for="budget">Destination Budget</label>
                         
                         
-                      <input type="text" name="budget" id="budget" [(ngModel)]="book.author" placeholder="enter dollar amount e.g. $500" required data-errormessage-value-missing="Uh oh, somethings wrong!" data-errormessage-type-mismatch="Uh oh, somethings wrong! Add dollar sign before number">
+                      <input type="text" name="budget" id="budget" [(ngModel)]="book.author" placeholder="enter dollar amount e.g. $500" required>
                   
                         
                         <!------- Destination Image --------->
