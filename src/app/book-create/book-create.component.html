@@ -79,7 +79,7 @@
     
       
       
-    <section class="add-events">
+    <section class="add-destinations">
                 <div class="add-form-container">
                 <div class="row">
                     <h2 style="color:#555454;">Add Destination</h2>
@@ -89,43 +89,43 @@
                     <form (ngSubmit)="saveBook()" #bookForm="ngForm" class="add-form">
                         <!---- Destination city row ----------->
                         
+                        <div class="form-group">
+                                <label for="name">Destination City</label>
                             
-                                <label for="city-name">Destination City</label>
                             
-                            
-                                <input type="text" name="city-name" id="city-name" [(ngModel)]="book.isbn" placeholder="enter city" required>
-                                
+                                <input type="text" [(ngModel)]="book.isbn" name="isbn" placeholder="enter city" required>
+                          </div>      
                                 
                         <!------- Destination Activity row --------->
                        
+                        <div class="form-group">
+                        <label for="name">Destination Activity</label>
                         
-                        <label for="city-activity">Destination Activity</label>
+                        <input type="text" [(ngModel)]="book.title" name="title" placeholder="enter what you want to do, e.g. Hiking etc." required>
                         
-                        <input type="text" name="city-activity" id="city-activity" [(ngModel)]="book.title" placeholder="enter what you want to do, e.g. Hiking etc.">
-                        
-                       
+                       </div>
                        
                         <!------- Destination Budget row --------->
                        
+                        <div class="form-group">
+                        <label for="name">Destination Budget</label>
                         
-                        <label for="budget">Destination Budget</label>
                         
-                        
-                      <input type="text" name="budget" id="budget" [(ngModel)]="book.author" placeholder="enter dollar amount e.g. $500" required>
-                  
+                      <input type="text" [(ngModel)]="book.author" name="author" placeholder="enter dollar amount e.g. $500" required>
+                    </div>
                         
                         <!------- Destination Image --------->
                        
+                      <div class="form-group">
+                        <label for="name">Destination Image</label>
                         
-                        <label for="image">Destination Image</label>
                         
-                        
-                        <input type="text" name="image" id="image" [(ngModel)]="book.publisher" placeholder="copy image address of city and paste here" required>
-                        
+                        <input type="text" [(ngModel)]="book.publisher" name="publisher" placeholder="copy image address of city and paste here" required>
+                      </div>
                           
                         <!----------- Save button row ------------->
                        
-                                <label>&nbsp;</label>
+                                
                            
                                 
                                 <div class="form-group">
@@ -151,45 +151,45 @@
                                 <!---- Destination city row ----------->
                         
                             
-                                <label for="city-name">Destination City</label>
+                                <label for="name">Destination City</label>
                             
                             
-                                <input type="text" name="city-name" id="city-name" [(ngModel)]="book.isbn" placeholder="enter city" required>
+                                <input type="text" [(ngModel)]="book.isbn" name="isbn" placeholder="enter city" required>
                         
 <!------- Destination Activity row --------->
                        
                         
-<label for="city-activity">Destination Activity</label>
+<label for="name">Destination Activity</label>
                         
-<input type="text" name="city-activity" id="city-activity" [(ngModel)]="book.title" placeholder="enter what you want to do, e.g. Hiking etc." minlength="3" maxlength="20" required data-errormessage-value-missing="Uh oh, somethings wrong!" data-errormessage-type-mismatch="Uh oh, somethings wrong! enter activity 3-20 characters long">
+<input type="text" [(ngModel)]="book.title" name="title" placeholder="enter what you want to do, e.g. Hiking etc." required>
 
                       
 <!------- Destination Budget row --------->
                        
                         
-<label for="budget">Destination Budget</label>
+<label for="name">Destination Budget</label>
                         
                         
-<input type="text" name="budget" id="budget" [(ngModel)]="book.author" placeholder="enter dollar amount e.g. $500" pattern="[\$0-9]" required data-errormessage-value-missing="Uh oh, somethings wrong!" data-errormessage-type-mismatch="Uh oh, somethings wrong! Add dollar sign before number">
+<input type="text" [(ngModel)]="book.author" name="author" placeholder="enter dollar amount e.g. $500" required>
                       
 
 <!------- Destination Image --------->
                        
                         
-<label for="image">Destination Image</label>
+<label for="name">Destination Image</label>
                         
                         
-<input type="text" name="image" id="image" [(ngModel)]="book.publisher" placeholder="copy image address of city and paste here" required>
+<input type="text" [(ngModel)]="book.publisher" name="publisher" placeholder="copy image address of city and paste here" required>
                        
                           
                         <!----------- Save button row ------------->
                         
                                 
-                                    <label>&nbsp;</label>
+                                   
                                 
-                                    <div class="submit-button">
-                                      <button type="submit" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
-                                    </div>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
+                        </div>
                     </form>
                 
                 </div> 
