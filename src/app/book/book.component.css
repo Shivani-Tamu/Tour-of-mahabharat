@@ -26,10 +26,9 @@ color: #000 !important;
 }
 
 .dest-format {
- 
   margin: 10px;
+  display: block;
   box-sizing: border-box;
-  display: inline-block;
   max-width: 100%;
 }
 
