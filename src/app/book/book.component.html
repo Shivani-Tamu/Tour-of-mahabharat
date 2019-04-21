@@ -76,7 +76,7 @@
           </tbody>
         </table>
      
-              
+         <!--     
       
         <div class="row">
         
@@ -91,9 +91,31 @@
           </div>
           </div>
         
-     </div>
+     </div>-->
+     <!---------------Carousel------------->
+     <div id="myDest" class="carousel slide" data-ride="carousel">
+      <!-- slideshow -->
+      <div class="carousel-inner" style="color: #555;" *ngFor="let book of books">
+        <div class="item active">
+          <img bind-src="book.publisher" alt="picture of added location" class="img-fluid"/>
+            <div class="carousel-caption">
+                <h3>{{ book.isbn }}</h3>
+                <h3>{{ book.author }}</h3>
+                <p style="color: white;font-weight: bold; font-size: 1.5em;">{{ book.title }}</p>
+            </div>
+        </div>
+        
+      </div>
+      <!-- Left and right controls -->
+   <a class="carousel-control-prev" href="#myDest" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myDest" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
     </div>
-</div>
+    </div>
+
 
    <!-- </div>-->
 
