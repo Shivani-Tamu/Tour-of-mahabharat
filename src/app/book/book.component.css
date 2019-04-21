@@ -25,3 +25,10 @@ color: #000 !important;
   width: auto;
 }
 
+.carousel-inner img {
+  margin: auto;
+}
+.carousel-inner {
+	padding-top: 5%;
+}
+
