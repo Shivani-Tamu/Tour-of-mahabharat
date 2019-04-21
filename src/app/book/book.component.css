@@ -26,15 +26,17 @@ color: #000 !important;
 }
 
 .dest-format {
- /* padding: 40px 30px;*/
-  background-color: #888;
+ 
   margin: 10px;
-  display: block;
   box-sizing: border-box;
-  height: 600px;
-  width: 400px;
+  
+  max-width: 100%;
 }
 
 .card-body {
   border: 1px solid #0000ff
+}
+
+.card-body img {
+  max-width: 100%;
 }
