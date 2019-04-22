@@ -38,7 +38,7 @@ color: #fff !important;
   box-sizing: border-box;
 }
 
-body {
+.full-destination {
   
   background-image: url("/assets/images/webform_wallpaper.png");
   background-size: cover;
@@ -164,7 +164,7 @@ textarea {
   
 
 
-  .submit-button {
+  .save-button {
       text-align: center;
       padding-bottom: 20%;
   }
