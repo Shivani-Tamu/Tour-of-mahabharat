@@ -4,7 +4,7 @@
   height: 900px;
 }*/
 nav-link {
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-family: 'Lato', 'sans-serif';
   cursor: pointer;
   margin-left: 25px;
@@ -113,7 +113,7 @@ h2.destination-h2 {
 label {
       display: block;
       color: #555454;
-      margin-bottom: 0.5em;
+      margin-bottom: 1em;
       font-weight: 400;
       font-size: 1.4em;
   }
@@ -203,6 +203,8 @@ textarea {
       display: block;
       color: #fff;
       font-weight: 400;
+      margin-bottom: 1em;
+      font-size: 1.4em;
   }
   
   input[type=text],
