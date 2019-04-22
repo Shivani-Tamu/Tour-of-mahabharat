@@ -24,4 +24,8 @@
     height: 60px;
     width: auto;
   }
+
+  .card-body {
+    text-align: center;
+  }
   
