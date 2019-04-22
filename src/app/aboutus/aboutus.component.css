@@ -29,3 +29,29 @@
     text-align: center;
   }
   
+  section {
+    padding: 5%;
+}
+
+.map {
+  overflow: hidden;
+  box-shadow: 5px 10px 25px #555;
+  margin-top: 8%;
+}
+
+.headline h1, 
+.headline h3 {
+  color: #555;
+}
+
+.headline h3 {
+  font-style: italic;
+}
+
+.headline p {
+  padding: 2.5% 0;
+}
+
+.square-grid h4{
+  color: #555;
+}
