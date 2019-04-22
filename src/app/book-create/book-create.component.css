@@ -38,7 +38,7 @@ color: #fff !important;
   background-image: url("/assets/images/webform_wallpaper.png");
   background-size: cover;
   background-position: center;
-  height: 100vh; 
+  height: 100vh;                           /********* height = 100% of viewport *****/
   background-color: #fff;
   color: #555454;
   font-family: 'Lato', 'Arial', sans-serif;
@@ -76,7 +76,7 @@ h2.destination-h2 {
   font-size: 2em;            /* expressed in %age of body font size: target/context = 36px/20px = 180% */
   word-spacing: 2%;
   margin-bottom: 2%;
-  margin-left: 19.99999%;     /* 960px is row width (context) ,so Target/Context = 191px/960px = 19.8958333333% */
+  margin-left: 19.8958333333%;     /* 960px is row width (context) ,so Target/Context = 191px/960px = 19.8958333333% */
   padding-top: 2%;
   letter-spacing: 1%;
 }
