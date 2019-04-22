@@ -13,7 +13,7 @@
       
   </head>
   <body>
-    <div class="full-destination">
+    <div class="full-event">
     <nav class="navbar navbar-expand-md">
         <a class="navbar-brand"><img src="/assets/images/sheero.png" alt="sheero_logo" class="sheero"></a>
         <span class="navbar-text mx-auto">TripWithUs!</span>
@@ -49,48 +49,66 @@
     
       
       
-    <section class="add-destinations">
+    <section class="add-event">
                 <div class="add-form-container">
                 <div class="row">
-                    <h2 class="destination-h2" style="color:#555454;">Add Destination</h2>
+                    <h2 class="event-h2" style="color:#555454;">Add Event</h2>
                 </div>
                 
                 
                     <form (ngSubmit)="saveBook()" #bookForm="ngForm" class="add-form">
-                        <!---- Destination city row ----------->
+                        <!---- Event ID row ----------->
                         
                         <div class="form-group">
-                                <label for="name">Destination City</label>
+                                <label for="name">Event ID</label>
                             
                             
-                                <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.isbn" name="isbn" placeholder="enter city" required>
+                                <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.isbn" name="isbn" placeholder="enter id" required>
                           </div>      
                                 
-                        <!------- Destination Activity row --------->
+                        <!------- Event Name row --------->
                        
                         <div class="form-group">
-                        <label for="name">Destination Activity</label>
+                        <label for="name">Event Name</label>
                         
-                        <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.title" name="title" placeholder="enter what you want to do, e.g. Hiking etc." required>
+                        <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.title" name="title" placeholder="enter event name, e.g. Palms Spring festival." required>
                         
                        </div>
                        
-                        <!------- Destination Budget row --------->
+                        <!------- Event type row --------->
                        
                         <div class="form-group">
-                        <label for="name">Destination Budget</label>
+                        <label for="name">Event Type</label>
                         
                         
-                      <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.author" name="author" placeholder="enter dollar amount e.g. $500" required>
+                      <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.author" name="author" placeholder="enter type e.g. music concert" required>
                     </div>
-                        
-                        <!------- Destination Image --------->
+
+                        <!------- Event location row --------->
+                       
+                        <div class="form-group">
+                          <label for="name">Event Location</label>
+                          
+                          
+                        <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.author" name="author" placeholder="enter city e.g. California" required>
+                      </div>
+                          
+                      <!------- Event Date row --------->
                        
                       <div class="form-group">
-                        <label for="name">Destination Image</label>
+                        <label for="name">Event Date</label>
                         
                         
-                        <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.publisher" name="publisher" placeholder="copy image address of city and paste here" required>
+                      <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.author" name="author" placeholder="enter date range e.g. Oct 2,2019 - Oct 4,2019" required>
+                    </div>
+                        
+                        <!------- Event Image --------->
+                       
+                      <div class="form-group">
+                        <label for="name">Events Image</label>
+                        
+                        
+                        <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.publisher" name="publisher" placeholder="copy image address of event and paste here" required>
                       </div>
                           
                         <!----------- Save button row ------------->
@@ -108,52 +126,68 @@
         <!----------------------------------  Mobile Form ------------------------------------------- -->
             <div class="add-form-container-mobile">
                 <div class="row">
-                    <h2 class="destination-h2" style="color:#fff;">Add Destinations</h2>
+                    <h2 class="event-h2" style="color:#fff;">Add Event</h2>
                 </div>
                 <!------- Customer name row --------->
                 <div class="row">
                     
                         <form (ngSubmit)="saveBook()" #bookForm="ngForm" class="add-form-mobile">
        
-                                <!---- Destination city row ----------->
+                               
+                          <!---- Event ID row ----------->
                         
-                            
-                                <label for="name">Destination City</label>
-                            
-                            
-                                <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.isbn" name="isbn" placeholder="enter city" required>
-                        
-<!------- Destination Activity row --------->
-                       
-                        
-<label for="name">Destination Activity</label>
-                        
-<input type="text" style="font-size:1em;" [(ngModel)]="book.title" class="form-control" name="title" placeholder="enter what you want to do, e.g. Hiking etc." required>
-
+                        <div class="form-group">
+                          <label for="name">Event ID</label>
                       
-<!------- Destination Budget row --------->
-                       
-                        
-<label for="name">Destination Budget</label>
-                        
-                        
-<input type="text" style="font-size:1em;" [(ngModel)]="book.author" class="form-control" name="author" placeholder="enter dollar amount e.g. $500" required>
                       
+                          <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.isbn" name="isbn" placeholder="enter id" required>
+                    </div> 
+<!------- Event Name row --------->
+                       
+<div class="form-group">
+  <label for="name">Event Name</label>
+  
+  <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.title" name="title" placeholder="enter event name, e.g. Palms Spring festival." required>
+  
+ </div>
+                      
+<!------- Event type row --------->
+                       
+<div class="form-group">
+  <label for="name">Event Type</label>
+  
+  
+<input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.author" name="author" placeholder="enter type e.g. music concert" required>
+</div>
 
-<!------- Destination Image --------->
+<!------- Event location row --------->
                        
-                        
-<label for="name">Destination Image</label>
-                        
-                        
-<input type="text" style="font-size:1em;" [(ngModel)]="book.publisher" class="form-control" name="publisher" placeholder="copy image address of city and paste here" required>
+<div class="form-group">
+  <label for="name">Event Location</label>
+  
+  
+<input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.author" name="author" placeholder="enter city e.g. California" required>
+</div>
+             <!------- Event Date row --------->
                        
-                          
+             <div class="form-group">
+              <label for="name">Event Date</label>
+              
+              
+            <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.author" name="author" placeholder="enter date range e.g. Oct 2,2019 - Oct 4,2019" required>
+          </div>  
+          
+          <!------- Event Image --------->
+                       
+          <div class="form-group">
+            <label for="name">Events Image</label>
+            
+            
+            <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.publisher" name="publisher" placeholder="copy image address of event and paste here" required>
+          </div>
+              
                         <!----------- Save button row ------------->
-                        
-                                
-                                   
-                                
+                              
                         <div class="form-group">
                           <button type="submit" style="width:100%;padding:3% 0;font-size: 1em;margin-top:2%;" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
                         </div>
