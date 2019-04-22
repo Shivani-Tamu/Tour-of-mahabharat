@@ -50,13 +50,14 @@ body {
 
 .headline h1 {
   color: #555;
+  font-size: 3.5em;
 }
 
 
 
 .headline p {
   padding: 2.5% 0;
-  font-size: 3.5em;
+  font-size: 1.5em;
 }
 
 .square-grid h3{
