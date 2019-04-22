@@ -4,7 +4,7 @@
   height: 900px;
 }*/
 nav-link {
-  font-size: 2em;
+  font-size: 1.1em;
   font-family: 'Lato', 'sans-serif';
   cursor: pointer;
   margin-left: 25px;
@@ -22,7 +22,7 @@ color: #fff !important;
 .navbar .navbar-text {
   color: white!important;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .sheero { 
@@ -48,7 +48,7 @@ color: #fff !important;
   color: #555454;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
-  font-size: 3.5em;                        /******** Base Line font-size **********/           
+  font-size: 1.5em;                        /******** Base Line font-size **********/           
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
     
@@ -63,6 +63,16 @@ color: #fff !important;
   visibility: hidden;
 }
 
+input {
+  width: 400px;
+  padding: 0 20px;
+}
+
+input,
+input::-webkit-input-placeholder {
+  font-size: 20px;
+  line-height: 3;
+}
 
 /******** Reusable - Base components ***********/
 
@@ -77,7 +87,7 @@ section {
 
 /********** Heading ***********/
 
-h2 {
+.destination-h2 h2 {
   font-weight: bold;
   font-size: 180%;            /* expressed in %age of body font size: target/context = 36px/20px = 180% */
   word-spacing: 2%;
@@ -130,26 +140,6 @@ textarea {
 
 
 /************ Submit button *********************/
-.btn:link, 
-.btn:visited,
-input[type=submit] {
-  display: inline-block;
-  margin-top: 2.5%;
-  padding: 2% 8%;
-  font-weight: 300;
-  text-decoration: none;
-  border-radius: 25%;
-}
-
-
-.btn-full:link, 
-.btn-full:visited,
-input[type=submit] {
-  background-color: #d35400;
-  border: 1px solid #d35400;
-  color: #fff;
-  margin-right: 15%;
-}
 
 input[type=date],
 input[type=file]{
@@ -166,11 +156,11 @@ textarea {
 }
   
 
-
+/*
   #save-button {
       text-align: center;
       padding-bottom: 20%;
-  }
+  } */
 
 
 .add-form-container-mobile {
@@ -196,7 +186,7 @@ textarea {
       margin: 0 auto;
   }
   
-  h2 {
+  .destination-h2 h2 {
   font-weight: 300;
   font-size: 180%;
   word-spacing: 2%;
