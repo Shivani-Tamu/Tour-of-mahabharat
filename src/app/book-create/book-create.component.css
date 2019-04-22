@@ -63,6 +63,18 @@ color: #fff !important;
   visibility: hidden;
 }
 
+input {
+  width: 60%;
+  padding: 0 5%;
+}
+
+input,
+input::-webkit-input-placeholder {
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+
 .form-control {
   font-size: 2em;
 }
