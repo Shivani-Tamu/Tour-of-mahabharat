@@ -4,7 +4,7 @@
   height: 900px;
 }*/
 nav-link {
-  font-size: 1.1em;
+  font-size: 2em;
   font-family: 'Lato', 'sans-serif';
   cursor: pointer;
   margin-left: 25px;
@@ -22,7 +22,7 @@ color: #fff !important;
 .navbar .navbar-text {
   color: white!important;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 2em;
 }
 
 .sheero { 
@@ -48,7 +48,7 @@ color: #fff !important;
   color: #555454;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
-  font-size: 1.5em;                        /******** Base Line font-size **********/           
+  font-size: 3.5em;                        /******** Base Line font-size **********/           
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
     
