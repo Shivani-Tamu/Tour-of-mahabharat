@@ -70,7 +70,7 @@ input {
 
 input,
 input::-webkit-input-placeholder {
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 3;
 }
 
@@ -100,14 +100,14 @@ h2.destination-h2 {
 
 /************* Add events Form ********************/
 .add-form-container {
-  width: 70%;                             /* Here context is section of width 90px, so target/context = 63px/90px = 70% */
+  width: 50%;                             /* Here context is section of width 90px, so target/context = 63px/90px = 70% */
   height: auto;                          /****** 100% of viewport height ********/
   margin: 0 auto;
   background-color: #fff;
   box-sizing: border-box;
+  padding: 5% 0;
   border: 1px solid #555454;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /*border-radius: 25%; */
 }
 
 label {
