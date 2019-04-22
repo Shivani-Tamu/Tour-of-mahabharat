@@ -63,15 +63,8 @@ color: #fff !important;
   visibility: hidden;
 }
 
-input {
-  width: 400px;
-  padding: 0 20px;
-}
-
-input,
-input::-webkit-input-placeholder {
-  font-size: 1.4em;
-  line-height: 3;
+.form-control {
+  font-size: 1em;
 }
 
 /******** Reusable - Base components ***********/
