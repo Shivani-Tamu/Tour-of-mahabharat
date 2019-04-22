@@ -29,10 +29,7 @@
     text-align: center;
   }
   
-  section {
-    padding: 5%;
-    margin-top: 8%;
-}
+ 
 
 body {
   background-image: url("/assets/images/aboutus.jpg");
@@ -69,7 +66,7 @@ body {
 @media only screen and (max-width: 768px) {
 
 section {
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 }
