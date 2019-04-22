@@ -31,6 +31,15 @@
   
   section {
     padding: 5%;
+    margin-top: 8%;
+}
+
+body {
+  background-image: url("/assets/images/aboutus.jpg");
+  background-size: cover;
+  background-position: center;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .map {
@@ -39,19 +48,27 @@
   margin-top: 8%;
 }
 
-.headline h1, 
-.headline h3 {
+.headline h1 {
   color: #555;
 }
 
-.headline h3 {
-  font-style: italic;
-}
+
 
 .headline p {
   padding: 2.5% 0;
+  font-size: 3.5em;
 }
 
-.square-grid h4{
+.square-grid h3{
   color: #555;
+}
+
+/****************** Media Queries ******************************/
+
+@media only screen and (max-width: 768px) {
+
+section {
+  margin-top: 10%;
+}
+
 }
