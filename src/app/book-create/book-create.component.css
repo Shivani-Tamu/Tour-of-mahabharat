@@ -217,6 +217,12 @@ textarea {
   height: 20%;
 }
 
+.add-form-mobile {
+  padding-top: 3%;
+  width: 100%;                            /* context is row of width 960px, target/context = 576px/960px = 60% */
+  margin: 0 auto; 
+}
+
 
   .submit-button {
       text-align: center;
